@@ -1,0 +1,18 @@
+.server-header {
+	background-color: #303030 !important;
+	line-height: 56px;
+	padding: 0 24px;
+	width: 200px;
+	// box-shadow: 0 4px 5px -3px #000;
+
+	.menu {
+		float: right;
+
+		i {
+			font-size: 18px;
+			margin-left: 5px;
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+	}
+}

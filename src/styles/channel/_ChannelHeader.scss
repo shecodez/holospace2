@@ -1,0 +1,30 @@
+.channel-header {
+	background-color: #424242 !important;
+	line-height: 56px !important;
+	height: 56px !important;
+	// position: fixed;
+	// width: 100%;
+	// z-index: 9;
+	// box-shadow: 0 4px 5px -3px #000;
+
+	.trigger {
+		font-size: 18px;
+		padding: 0 24px;
+		cursor: pointer;
+		transition: color 0.3s;
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	.menu {
+		float: right;
+
+		i {
+			font-size: 18px;
+			margin-right: 5px;
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+	}
+}

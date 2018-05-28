@@ -1,0 +1,60 @@
+//@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+$primary: #7a5ac3;
+
+html {
+	height: 100%;
+}
+
+body > #root > .App {
+	color: #fff;
+	min-height: 100%;
+	overflow: hidden;
+	background-color: transparent !important;
+	//font-family: "Josefin Sans", sans-serif;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background: linear-gradient(90deg, rgba(#ff4d4d, 0.6) 10%, rgba(#ff8183, 0.6)),
+		url('https://ggiuliafilippini.files.wordpress.com/2015/06/flat-mountains-1080p.jpg')
+			no-repeat;
+	background-position: 50% 50%;
+}
+
+.centered {
+	text-align: center;
+}
+
+.ant-layout-sider-collapsed {
+	.no-display {
+		display: none;
+	}
+}
+
+.menu {
+	i {
+		padding: 5px;
+		border-radius: 4px;
+		&:hover {
+			background-color: #111;
+		}
+	}
+}
+
+//-- App ---------------------------------------------
+@import './app/MainContent';
+//-- User --------------------------------------------
+@import './user/UserHeader';
+//-- Server ------------------------------------------
+@import './server/ServerSidebar';
+@import './server/ServerHeader';
+//-- Channel -----------------------------------------
+@import './channel/ChannelSidebar';
+@import './channel/ChannelHeader';
+//-- Member ------------------------------------------
+@import './member/MemberSidebar';
+//----------------------------------------------------
