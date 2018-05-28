@@ -1,18 +1,19 @@
-import React from 'react';
-import { Icon, Avatar } from 'antd';
+import React from "react";
+import { Icon, Avatar } from "antd";
 
 class UserHeader extends React.Component {
 	openMenu = () => {
-		console.log('OpenMenu!');
+		console.log("OpenMenu!");
 	};
 
 	render() {
 		return (
-			<div className="user-header ">
+			<div className="user-header">
 				<Avatar icon="user" className="avatar" />
-				<span className="no-display">username</span>
+				<span className="no-display text">username</span>
 				<span className="no-display menu">
-					<Icon type="ellipsis" onClick={this.openMenu} />
+					<Icon type="up" onClick={this.openMenu} />
+					<Icon type="setting" />
 				</span>
 			</div>
 		);

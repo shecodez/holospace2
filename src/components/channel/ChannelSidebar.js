@@ -1,8 +1,8 @@
-import React from 'react';
-import { Layout } from 'antd';
+import React from "react";
+import { Layout } from "antd";
 
-import ServerHeader from '../server/ServerHeader';
-import ChannelContent from './ChannelContent';
+import ServerHeader from "../server/ServerHeader";
+import ChannelList from "./ChannelList";
 
 class ChannelSidebar extends React.Component {
 	handleMenuClick = ({ key }) => {
@@ -12,6 +12,7 @@ class ChannelSidebar extends React.Component {
 	render() {
 		return (
 			<Layout.Sider
+				width={240}
 				trigger={null}
 				breakpoint="lg"
 				collapsedWidth="0"
@@ -23,7 +24,7 @@ class ChannelSidebar extends React.Component {
 				className="channel-sidebar"
 			>
 				<ServerHeader />
-				<ChannelContent />
+				<ChannelList />
 			</Layout.Sider>
 		);
 	}

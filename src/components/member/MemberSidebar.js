@@ -21,6 +21,7 @@ class MemberSidebar extends React.Component {
 	render() {
 		return (
 			<Layout.Sider
+			width={240}
 				trigger={null}
 				breakpoint="lg"
 				collapsible
@@ -30,7 +31,7 @@ class MemberSidebar extends React.Component {
 				<div className="header">
 					<Icon
 						className="trigger"
-						type={this.state.collapsed ? 'left' : 'right'}
+						type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'}
 						onClick={this.toggle}
 					/>
 					<span className="no-display">Members</span>

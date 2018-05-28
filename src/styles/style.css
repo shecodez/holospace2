@@ -20,7 +20,7 @@ body > #root > .App {
   text-align: center; }
 
 .ant-layout-sider-collapsed .no-display {
-  display: none; }
+  visibility: hidden; }
 
 .menu i {
   padding: 5px;
@@ -28,38 +28,47 @@ body > #root > .App {
   .menu i:hover {
     background-color: #111; }
 
+.server-sidebar,
+.channel-sidebar,
+.member-sidebar {
+  height: 100vh !important; }
+
 .main-content {
   background-color: rgba(66, 66, 66, 0.8) !important; }
 
 .user-header {
   background-color: #212121 !important;
-  line-height: 56px;
   padding: 0 24px;
-  position: fixed;
+  line-height: 56px;
   bottom: 0;
-  width: 200px;
-  overflow: hidden; }
+  width: 240px;
+  position: fixed; }
   .user-header .avatar {
     margin-right: 0.5em; }
+  .user-header .text,
   .user-header .menu {
-    float: right; }
+    display: inline-block; }
+  .user-header .menu {
+    float: right;
+    height: 56px; }
     .user-header .menu i {
       font-size: 18px;
       margin-left: 5px;
       cursor: pointer;
-      transition: color 0.3s; }
+      transition: color 0.3s;
+      vertical-align: middle; }
 
 .server-sidebar {
-  background-color: rgba(17, 17, 17, 0.8) !important; }
-  .server-sidebar .header {
-    line-height: 64px;
-    text-align: center; }
+  background-color: rgba(17, 17, 17, 0.8) !important;
+  text-align: center; }
+  .server-sidebar button {
+    margin: 0.8em 0; }
 
 .server-header {
   background-color: #303030 !important;
   line-height: 56px;
   padding: 0 24px;
-  width: 200px; }
+  width: 240px; }
   .server-header .menu {
     float: right; }
     .server-header .menu i {
@@ -67,6 +76,9 @@ body > #root > .App {
       margin-left: 5px;
       cursor: pointer;
       transition: color 0.3s; }
+
+.server-list .ant-avatar:hover {
+  border-radius: 15%; }
 
 .channel-sidebar {
   background-color: rgba(48, 48, 48, 0.8) !important;

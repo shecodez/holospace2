@@ -19,8 +19,12 @@ body > #root > .App {
 	left: 0;
 	min-width: 100%;
 	min-height: 100%;
-	background: linear-gradient(90deg, rgba(#ff4d4d, 0.6) 10%, rgba(#ff8183, 0.6)),
-		url('https://ggiuliafilippini.files.wordpress.com/2015/06/flat-mountains-1080p.jpg')
+	background: linear-gradient(
+			90deg,
+			rgba(#ff4d4d, 0.6) 10%,
+			rgba(#ff8183, 0.6)
+		),
+		url("https://ggiuliafilippini.files.wordpress.com/2015/06/flat-mountains-1080p.jpg")
 			no-repeat;
 	background-position: 50% 50%;
 }
@@ -31,7 +35,7 @@ body > #root > .App {
 
 .ant-layout-sider-collapsed {
 	.no-display {
-		display: none;
+		visibility: hidden;
 	}
 }
 
@@ -45,16 +49,23 @@ body > #root > .App {
 	}
 }
 
+.server-sidebar,
+.channel-sidebar,
+.member-sidebar {
+	height: 100vh !important;
+}
+
 //-- App ---------------------------------------------
-@import './app/MainContent';
+@import "./app/MainContent";
 //-- User --------------------------------------------
-@import './user/UserHeader';
+@import "./user/UserHeader";
 //-- Server ------------------------------------------
-@import './server/ServerSidebar';
-@import './server/ServerHeader';
+@import "./server/ServerSidebar";
+@import "./server/ServerHeader";
+@import "./server/ServerList";
 //-- Channel -----------------------------------------
-@import './channel/ChannelSidebar';
-@import './channel/ChannelHeader';
+@import "./channel/ChannelSidebar";
+@import "./channel/ChannelHeader";
 //-- Member ------------------------------------------
-@import './member/MemberSidebar';
+@import "./member/MemberSidebar";
 //----------------------------------------------------

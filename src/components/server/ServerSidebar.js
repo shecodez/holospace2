@@ -1,21 +1,22 @@
-import React from 'react';
-import { Layout } from 'antd';
+import React from "react";
+import { Layout } from "antd";
+
+import AddServerBtn from "./AddServerBtn";
+import AddDirectBtn from "../channel/AddDirectBtn";
+import ServerList from "./ServerList";
 
 class ServerSidebar extends React.Component {
-	handleMenuClick = ({ key }) => {
-		//this.props.history.push(key);
-	};
-
 	render() {
 		return (
 			<Layout.Sider
 				trigger={null}
-				collapsible
 				collapsed={true}
 				className="server-sidebar"
 			>
-				<div className="header">Servers</div>
-				{this.props.children}
+				<AddDirectBtn />
+				<div>Servers</div>
+				<ServerList />
+				<AddServerBtn />
 			</Layout.Sider>
 		);
 	}
