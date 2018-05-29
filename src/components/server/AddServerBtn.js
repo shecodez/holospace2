@@ -4,7 +4,7 @@ import { Button } from "antd";
 class AddServerBtn extends React.Component {
 	render() {
 		return (
-			<div>
+			<div style={{ position: "sticky", bottom: "0" }}>
 				<Button
 					icon="plus"
 					shape="circle"

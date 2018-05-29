@@ -1,5 +1,9 @@
 .server-list {
+	overflow-y: auto;
+	max-height: calc(100% - 158.6px); // minus t and b divs
+
 	.ant-avatar {
+		cursor: pointer;
 		&:hover {
 			border-radius: 15%;
 		}

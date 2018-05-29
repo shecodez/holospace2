@@ -6,14 +6,16 @@ class AddDirectBtn extends React.Component {
 
 	render() {
 		return (
-			<Tooltip placement="right" title={"Direct Message"}>
-				<Button
-					icon="mail"
-					shape="circle"
-					size="large"
-					type="primary"
-				/>
-			</Tooltip>
+			<div>
+				<Tooltip placement="right" title={"Direct Message"}>
+					<Button
+						icon="mail"
+						shape="circle"
+						size="large"
+						type="primary"
+					/>
+				</Tooltip>
+			</div>
 		);
 	}
 }

@@ -5,17 +5,17 @@ import { getColorHash } from "../../utils/colors";
 class ServerList extends React.Component {
 	state = {
 		servers: [
-			{ name: "Resume | NJN" },
-			{ name: "이거 매워요?" },
-			{ name: "見ぬが花" }
+			{ id: "1", name: "Resume | NJN" },
+			{ id: "2", name: "이거 매워요?" },
+			{ id: "3", name: "見ぬが花" }
 		]
 	};
 
 	render() {
 		return (
 			<section className="server-list">
-				{this.state.servers.map((server, i) => (
-					<div key={i} style={{ margin: ".5em auto" }}>
+				{this.state.servers.map(server => (
+					<div key={server.id} style={{ margin: ".5em auto" }}>
 						<Tooltip placement="right" title={server.name}>
 							{server.icon ? (
 								<Avatar size="large" src={server.icon} />

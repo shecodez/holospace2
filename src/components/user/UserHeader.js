@@ -9,7 +9,7 @@ class UserHeader extends React.Component {
 	render() {
 		return (
 			<div className="user-header">
-				<Avatar icon="user" className="avatar" />
+				<Avatar icon="user" />
 				<span className="no-display text">username</span>
 				<span className="no-display menu">
 					<Icon type="up" onClick={this.openMenu} />

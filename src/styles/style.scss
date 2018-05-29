@@ -35,7 +35,7 @@ body > #root > .App {
 
 .ant-layout-sider-collapsed {
 	.no-display {
-		visibility: hidden;
+		display: none !important;
 	}
 }
 
@@ -68,4 +68,5 @@ body > #root > .App {
 @import "./channel/ChannelHeader";
 //-- Member ------------------------------------------
 @import "./member/MemberSidebar";
+@import "./member/_MemberList";
 //----------------------------------------------------

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Layout, Icon } from 'antd';
+import React from "react";
+import { Layout, Icon } from "antd";
 
-import UserHeader from '../user/UserHeader';
+import UserHeader from "../user/UserHeader";
+import MemberList from "./MemberList";
 
 class MemberSidebar extends React.Component {
 	state = {
@@ -21,7 +22,7 @@ class MemberSidebar extends React.Component {
 	render() {
 		return (
 			<Layout.Sider
-			width={240}
+				width={240}
 				trigger={null}
 				breakpoint="lg"
 				collapsible
@@ -31,12 +32,15 @@ class MemberSidebar extends React.Component {
 				<div className="header">
 					<Icon
 						className="trigger"
-						type={this.state.collapsed ? 'menu-fold' : 'menu-unfold'}
+						type={
+							this.state.collapsed ? "menu-fold" : "menu-unfold"
+						}
 						onClick={this.toggle}
 					/>
 					<span className="no-display">Members</span>
 				</div>
-				{this.props.children}
+				<MemberList />
+
 				<UserHeader />
 			</Layout.Sider>
 		);

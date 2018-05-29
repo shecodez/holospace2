@@ -20,7 +20,7 @@ body > #root > .App {
   text-align: center; }
 
 .ant-layout-sider-collapsed .no-display {
-  visibility: hidden; }
+  display: none !important; }
 
 .menu i {
   padding: 5px;
@@ -43,11 +43,11 @@ body > #root > .App {
   bottom: 0;
   width: 240px;
   position: fixed; }
-  .user-header .avatar {
-    margin-right: 0.5em; }
-  .user-header .text,
-  .user-header .menu {
-    display: inline-block; }
+  .user-header .ant-avatar {
+    margin-right: 0.5em;
+    cursor: pointer; }
+    .user-header .ant-avatar:hover {
+      opacity: 0.8; }
   .user-header .menu {
     float: right;
     height: 56px; }
@@ -77,8 +77,13 @@ body > #root > .App {
       cursor: pointer;
       transition: color 0.3s; }
 
-.server-list .ant-avatar:hover {
-  border-radius: 15%; }
+.server-list {
+  overflow-y: auto;
+  max-height: calc(100% - 158.6px); }
+  .server-list .ant-avatar {
+    cursor: pointer; }
+    .server-list .ant-avatar:hover {
+      border-radius: 15%; }
 
 .channel-sidebar {
   background-color: rgba(48, 48, 48, 0.8) !important;
@@ -114,3 +119,21 @@ body > #root > .App {
     transition: color 0.3s; }
     .member-sidebar .trigger:hover {
       color: #7a5ac3; }
+
+.member-list {
+  overflow-y: auto;
+  max-height: calc(100% - 112px); }
+  .member-list .ant-avatar {
+    margin-right: 0.5em;
+    vertical-align: middle;
+    cursor: pointer; }
+  .member-list .member {
+    margin: 0.5em auto;
+    background-color: transparent;
+    transition: all 0.5s ease-out; }
+    .member-list .member:hover {
+      background: black;
+      /* For browsers that do not support gradients */
+      background: linear-gradient(to right, black, rgba(0, 0, 0, 0)); }
+    .member-list .member .text {
+      vertical-align: middle; }

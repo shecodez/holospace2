@@ -6,13 +6,13 @@
 	width: 240px;
 	position: fixed;
 
-	.avatar {
+	.ant-avatar {
 		margin-right: 0.5em;
-	}
+		cursor: pointer;
 
-	.text,
-	.menu {
-		display: inline-block;
+		&:hover {
+			opacity: 0.8;
+		}
 	}
 
 	.menu {
