@@ -5,13 +5,13 @@ import MemberItem from "./MemberItem";
 class MemberList extends React.Component {
 	state = {
 		members: [
-			{ id: "1", username: "Niico", online: true },
-			{ id: "2", username: "龍ハヤブサ", online: true },
-			{ id: "3", username: "Kai", online: true, status: "hide" },
-			{ id: "4", username: "WillIAm", online: true },
-			{ id: "5", username: "山田太郎", online: false },
-			{ id: "6", username: "홍길동", online: true },
-			{ id: "7", username: "IronMan", online: false }
+			{ id: "u1", username: "Niico", online: true },
+			{ id: "u2", username: "龍ハヤブサ", online: true },
+			{ id: "u3", username: "Kai", online: true, status: "hide" },
+			{ id: "u4", username: "WillIAm", online: true },
+			{ id: "u5", username: "山田太郎", online: false },
+			{ id: "u6", username: "홍길동", online: true },
+			{ id: "u7", username: "IronMan", online: false }
 		]
 	};
 

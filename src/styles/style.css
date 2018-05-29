@@ -108,6 +108,126 @@ body > #root > .App {
       cursor: pointer;
       transition: color 0.3s; }
 
+.channel-list {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+  max-height: calc(100% - 56px); }
+  .channel-list .channel-types {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .channel-list i {
+    color: #fff; }
+  .channel-list .menu i {
+    font-size: 18px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: color 0.3s; }
+
+.channel-panel {
+  border-bottom: none !important;
+  overflow: "hidden"; }
+  .channel-panel .arrow {
+    line-height: 52px !important; }
+  .channel-panel .ant-collapse-content-box {
+    padding: 0 !important; }
+
+.channel-item {
+  color: #999;
+  border-left: 4px solid transparent;
+  height: 40px;
+  line-height: 40px;
+  position: relative; }
+  .channel-item .channel-item-header {
+    padding-left: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer; }
+    .channel-item .channel-item-header .hash-tag {
+      margin-right: 0.7em; }
+  .channel-item i {
+    color: #999 !important; }
+  .channel-item .menu {
+    visibility: hidden !important; }
+  .channel-item:hover, .channel-item.active {
+    border-left: 4px solid #7a5ac3;
+    background: #424242;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #424242, rgba(66, 66, 66, 0)); }
+    .channel-item:hover i,
+    .channel-item:hover .text, .channel-item.active i,
+    .channel-item.active .text {
+      color: white !important; }
+    .channel-item:hover .menu, .channel-item.active .menu {
+      visibility: visible !important; }
+  .channel-item.active:after {
+    content: "";
+    display: block;
+    border: 20px solid transparent;
+    border-right-color: rgba(200, 200, 200, 0.1);
+    position: absolute;
+    bottom: 0px;
+    right: 0; }
+
+.channel-collapse-item .ant-collapse-header {
+  border-left: 4px solid transparent;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+  .channel-collapse-item .ant-collapse-header .arrow {
+    height: 40px !important;
+    line-height: 40px !important;
+    margin-left: 18px; }
+  .channel-collapse-item .ant-collapse-header i {
+    color: #999 !important; }
+  .channel-collapse-item .ant-collapse-header .menu {
+    visibility: hidden !important; }
+  .channel-collapse-item .ant-collapse-header .channel-item-header {
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer; }
+    .channel-collapse-item .ant-collapse-header .channel-item-header .text {
+      color: #999; }
+  .channel-collapse-item .ant-collapse-header:hover, .channel-collapse-item .ant-collapse-header.active {
+    border-left: 4px solid #7a5ac3;
+    background: #424242;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #424242, rgba(66, 66, 66, 0)); }
+    .channel-collapse-item .ant-collapse-header:hover i,
+    .channel-collapse-item .ant-collapse-header:hover .text, .channel-collapse-item .ant-collapse-header.active i,
+    .channel-collapse-item .ant-collapse-header.active .text {
+      color: white !important; }
+    .channel-collapse-item .ant-collapse-header:hover .menu, .channel-collapse-item .ant-collapse-header.active .menu {
+      visibility: visible !important; }
+  .channel-collapse-item .ant-collapse-header.active:after {
+    content: "";
+    display: block;
+    border: 20px solid transparent;
+    border-right-color: rgba(200, 200, 200, 0.1);
+    position: absolute;
+    bottom: 0px;
+    right: 0; }
+
+.channel-presence {
+  padding-left: 58px; }
+  .channel-presence .ant-avatar {
+    margin-right: 0.5em;
+    vertical-align: middle; }
+  .channel-presence .member {
+    margin: 0.5em auto;
+    color: #999; }
+    .channel-presence .member:hover {
+      color: #fff; }
+    .channel-presence .member .text {
+      vertical-align: middle; }
+
 .member-sidebar {
   background-color: rgba(33, 33, 33, 0.8) !important; }
   .member-sidebar .header {
@@ -121,6 +241,7 @@ body > #root > .App {
       color: #7a5ac3; }
 
 .member-list {
+  height: calc(100% - 116px);
   overflow-y: auto;
   max-height: calc(100% - 112px); }
   .member-list .ant-avatar {

@@ -19,12 +19,13 @@ const MemberItem = props => {
 				trigger="click"
 			>
 				{props.member.icon ? (
-					<Avatar src={props.member.icon} />
+					<Avatar src={props.member.icon} size={props.size} />
 				) : (
 					<Avatar
 						style={{
 							backgroundColor: getColorHash(props.member.username)
 						}}
+						size={props.size}
 					>
 						{props.member.username.charAt(0)}
 					</Avatar>

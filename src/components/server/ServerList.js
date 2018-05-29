@@ -5,9 +5,9 @@ import { getColorHash } from "../../utils/colors";
 class ServerList extends React.Component {
 	state = {
 		servers: [
-			{ id: "1", name: "Resume | NJN" },
-			{ id: "2", name: "이거 매워요?" },
-			{ id: "3", name: "見ぬが花" }
+			{ id: "s1", name: "Resume | NJN" },
+			{ id: "s2", name: "이거 매워요?" },
+			{ id: "s3", name: "見ぬが花" }
 		]
 	};
 

@@ -1,4 +1,5 @@
 .member-list {
+	height: calc(100% - 116px);
 	overflow-y: auto;
 	max-height: calc(100% - 112px); // minus t and b divs
 

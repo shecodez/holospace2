@@ -1,0 +1,19 @@
+.channel-presence {
+	padding-left: 58px;
+
+	.ant-avatar {
+		margin-right: 0.5em;
+		vertical-align: middle;
+	}
+
+	.member {
+		margin: 0.5em auto;
+		color: #999;
+		&:hover {
+			color: #fff;
+		}
+		.text {
+			vertical-align: middle;
+		}
+	}
+}

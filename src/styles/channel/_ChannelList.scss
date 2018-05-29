@@ -1,0 +1,26 @@
+.channel-list {
+	height: calc(100% - 56px);
+	overflow-y: auto;
+	max-height: calc(100% - 56px); // minus t and b divs
+
+	.channel-types {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	i {
+		color: #fff;
+	}
+
+	.menu {
+		i {
+			font-size: 18px;
+			margin-right: 24px;
+			cursor: pointer;
+			transition: color 0.3s;
+		}
+	}
+}

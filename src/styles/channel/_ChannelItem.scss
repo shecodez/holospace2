@@ -1,0 +1,116 @@
+.channel-item {
+	color: #999;
+	border-left: 4px solid transparent;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+
+	.channel-item-header {
+		padding-left: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+
+		.hash-tag {
+			margin-right: 0.7em;
+		}
+	}
+
+	i {
+		color: #999 !important;
+	}
+	.menu {
+		visibility: hidden !important;
+	}
+
+	&:hover,
+	&.active {
+		border-left: 4px solid $primary;
+		background: #424242; /* For browsers that do not support gradients */
+		background: linear-gradient(
+			to right,
+			rgba(66, 66, 66, 1),
+			rgba(66, 66, 66, 0)
+		);
+
+		i,
+		.text {
+			color: white !important;
+		}
+		.menu {
+			visibility: visible !important;
+		}
+	}
+	&.active:after {
+		content: "";
+		display: block;
+		border: 20px solid transparent;
+		border-right-color: rgba(200, 200, 200, 0.1);
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+	}
+}
+.channel-collapse-item {
+	.ant-collapse-header {
+		border-left: 4px solid transparent;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+
+		.arrow {
+			height: 40px !important;
+			line-height: 40px !important;
+			margin-left: 18px;
+		}
+
+		i {
+			color: #999 !important;
+		}
+		.menu {
+			visibility: hidden !important;
+		}
+
+		.channel-item-header {
+			padding-left: 1em;
+			display: flex;
+			align-items: center;
+			justify-content: space-between !important;
+			height: 40px;
+			line-height: 40px;
+			cursor: pointer;
+
+			.text {
+				color: #999;
+			}
+		}
+
+		&:hover,
+		&.active {
+			border-left: 4px solid $primary;
+			background: #424242; /* For browsers that do not support gradients */
+			background: linear-gradient(
+				to right,
+				rgba(66, 66, 66, 1),
+				rgba(66, 66, 66, 0)
+			);
+
+			i,
+			.text {
+				color: white !important;
+			}
+			.menu {
+				visibility: visible !important;
+			}
+		}
+		&.active:after {
+			content: "";
+			display: block;
+			border: 20px solid transparent;
+			border-right-color: rgba(200, 200, 200, 0.1);
+			position: absolute;
+			bottom: 0px;
+			right: 0;
+		}
+	}
+}
