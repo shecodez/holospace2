@@ -7,6 +7,14 @@ body > #root > .App {
   overflow: hidden;
   background-color: transparent !important; }
 
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
 .background {
   position: absolute;
   top: 0;
@@ -258,3 +266,29 @@ body > #root > .App {
       background: linear-gradient(to right, black, rgba(0, 0, 0, 0)); }
     .member-list .member .text {
       vertical-align: middle; }
+
+.chat-room {
+  background-color: rgba(66, 66, 66, 0.8) !important;
+  overflow: hidden; }
+
+.chat-history .chat-list {
+  padding: 24px 7px 24px 24px;
+  max-height: calc(100vh - 145px);
+  overflow-y: scroll; }
+  .chat-history .chat-list .auth {
+    color: #fff; }
+  .chat-history .chat-list .date {
+    color: #999; }
+  .chat-history .chat-list .menu {
+    float: right;
+    visibility: hidden !important; }
+  .chat-history .chat-list .chat-list-item {
+    color: #c9c9c9; }
+    .chat-history .chat-list .chat-list-item:hover .menu {
+      visibility: visible !important; }
+
+.chat-input {
+  padding-top: 18px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e8e8e8;
+  margin: 0 24px; }

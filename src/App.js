@@ -1,11 +1,11 @@
-import React from 'react';
-import { Layout } from 'antd';
+import React from "react";
+import { Layout } from "antd";
 
-import ServerSidebar from './components/server/ServerSidebar';
-import ChannelSidebar from './components/channel/ChannelSidebar';
-import MemberSidebar from './components/member/MemberSidebar';
-import ChannelHeader from './components/channel/ChannelHeader';
-import MainContent from './components/app/MainContent';
+import ServerSidebar from "./components/server/ServerSidebar";
+import ChannelSidebar from "./components/channel/ChannelSidebar";
+import MemberSidebar from "./components/member/MemberSidebar";
+import ChannelHeader from "./components/channel/ChannelHeader";
+import ChatRoom from "./components/chat/ChatRoom";
 
 class App extends React.Component {
 	state = {
@@ -27,18 +27,23 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App background">
-				<Layout style={{ minHeight: '100vh', backgroundColor: 'transparent' }}>
+				<Layout
+					style={{
+						minHeight: "100vh",
+						backgroundColor: "transparent"
+					}}
+				>
 					<ServerSidebar />
 					<ChannelSidebar
 						collapsed={this.state.collapsed}
 						setCollapsed={this.setCollapsed}
 					/>
-					<Layout style={{ backgroundColor: 'transparent' }}>
+					<Layout style={{ backgroundColor: "transparent" }}>
 						<ChannelHeader
 							toggle={this.toggle}
 							collapsed={this.state.collapsed}
 						/>
-						<MainContent />
+						<ChatRoom />
 					</Layout>
 					<MemberSidebar />
 				</Layout>

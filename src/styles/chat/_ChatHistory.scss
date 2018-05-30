@@ -1,0 +1,30 @@
+.chat-history {
+	//height: 100%;
+	//overflow: hidden;
+
+	.chat-list {
+		padding: 24px 7px 24px 24px;
+		max-height: calc(100vh - 145px);
+		overflow-y: scroll;
+
+		.auth {
+			color: #fff;
+		}
+		.date {
+			color: #999;
+		}
+
+		.menu {
+			float: right;
+			visibility: hidden !important;
+		}
+		.chat-list-item {
+			color: rgb(201, 201, 201);
+			&:hover {
+				.menu {
+					visibility: visible !important;
+				}
+			}
+		}
+	}
+}
