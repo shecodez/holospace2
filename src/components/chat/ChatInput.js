@@ -6,7 +6,7 @@ const ChatInut = props => {
 		<div className="chat-input">
 			<Input
 				addonBefore={<Icon type="upload" />}
-				addonAfter={<Icon type="smile" />}
+				addonAfter={<Icon type="smile-o" />}
 				size="large"
 				placeholder="Message props.channel.name"
 			/>

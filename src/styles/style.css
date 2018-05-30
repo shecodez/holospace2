@@ -21,7 +21,7 @@ html {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  background: linear-gradient(90deg, rgba(255, 77, 77, 0.6) 10%, rgba(255, 129, 131, 0.6)), url("https://ggiuliafilippini.files.wordpress.com/2015/06/flat-mountains-1080p.jpg") no-repeat;
+  background: linear-gradient(90deg, rgba(255, 77, 77, 0.6) 10%, rgba(255, 129, 131, 0.6)), url("../img/flat-mountains-1080p.jpg") no-repeat;
   background-position: 50% 50%; }
 
 .centered {
@@ -107,7 +107,7 @@ html {
     cursor: pointer;
     transition: color 0.3s; }
     .channel-header .trigger:hover {
-      color: #7a5ac3; }
+      color: #554ac8; }
   .channel-header .menu {
     float: right; }
     .channel-header .menu i {
@@ -162,7 +162,7 @@ html {
   .channel-item .menu {
     visibility: hidden !important; }
   .channel-item:hover, .channel-item.active {
-    border-left: 4px solid #7a5ac3;
+    border-left: 4px solid #554ac8;
     background: #424242;
     /* For browsers that do not support gradients */
     background: linear-gradient(to right, #424242, rgba(66, 66, 66, 0)); }
@@ -204,7 +204,7 @@ html {
     .channel-collapse-item .ant-collapse-header .channel-item-header .text {
       color: #999; }
   .channel-collapse-item .ant-collapse-header:hover, .channel-collapse-item .ant-collapse-header.active {
-    border-left: 4px solid #7a5ac3;
+    border-left: 4px solid #554ac8;
     background: #424242;
     /* For browsers that do not support gradients */
     background: linear-gradient(to right, #424242, rgba(66, 66, 66, 0)); }
@@ -246,7 +246,7 @@ html {
     cursor: pointer;
     transition: color 0.3s; }
     .member-sidebar .trigger:hover {
-      color: #7a5ac3; }
+      color: #554ac8; }
 
 .member-list {
   height: calc(100% - 116px);

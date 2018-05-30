@@ -1,10 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/style.css';
-import App from './App';
-import registerServiceWorker from './utils/registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
-require('dotenv').config();
+import "./styles/style.css";
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import registerServiceWorker from "./utils/registerServiceWorker";
+
+require("dotenv").config();
+
+ReactDOM.render(
+	<BrowserRouter>
+		<Route component={App} />
+	</BrowserRouter>,
+	document.getElementById("root")
+);
 registerServiceWorker();
