@@ -16,6 +16,12 @@ html {
 	height: 100%;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
 body > #root > .App {
 	color: #fff;
 	min-height: 100%;
@@ -75,7 +81,7 @@ html {
 }
 
 //-- App ---------------------------------------------
-@import "./app/MainContent";
+
 //-- User --------------------------------------------
 @import "./user/UserHeader";
 //-- Server ------------------------------------------
@@ -96,4 +102,5 @@ html {
 @import "./chat/ChatRoom";
 @import "./chat/ChatHistory";
 @import "./chat/ChatInput";
-//----------------------------------------------------
+//-- Holo --------------------------------------------
+@import "./holo/HoloSpace";
